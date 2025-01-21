@@ -52,12 +52,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'studybuddy.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates',
+            BASE_DIR / 'templates',  # Ensure this path is correct
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -70,6 +69,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'studybuddy.wsgi.application'
 
